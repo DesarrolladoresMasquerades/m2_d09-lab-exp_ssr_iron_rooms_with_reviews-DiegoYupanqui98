@@ -1,0 +1,14 @@
+<form action="/auth/login" method="POST">
+   <label> Email
+      <input type="email" name="email">
+   </label>
+   <label> Password
+      <input type="password" name="password">
+   </label>
+
+   <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+{{#if errorMessage}}
+   {{errorMessage}}
+{{/if}}

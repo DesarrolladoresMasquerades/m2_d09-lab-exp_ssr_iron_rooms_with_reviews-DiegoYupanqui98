@@ -1,0 +1,22 @@
+<h1>EDIT ROOM</h1>
+
+<form action="/rooms/{{_id}}/edit" method="POST" enctype="multipart/form-data">
+
+    <label for="name">Name:</label>
+    <br>
+    <input type="text" name="name" value="{{name}}">
+    <br>
+
+    <label for="description">Description:</label>
+    <br>
+    <textarea name="description" cols="30" rows="10">{{description}}</textarea>
+    <br>
+
+    <label for="imgUrl">Image:</label>
+    <br>
+    <input type="file" name="imgUrl" value="{{imgUrl}}">
+    <br>
+    
+    <br>
+    <button type="submit">Create</button>
+</form>
