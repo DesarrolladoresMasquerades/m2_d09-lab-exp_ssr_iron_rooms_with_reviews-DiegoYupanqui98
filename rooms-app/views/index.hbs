@@ -1,0 +1,13 @@
+<h1>{{title}} 🚀</h1>
+<p>Welcome Ironhacker!</p>
+
+{{#unless user}}
+<a href="/auth/signup" class="btn btn-primary">Signup</a>
+<a href="/auth/login" class="btn btn-primary">Login</a>
+{{/unless}}
+
+{{#if user}}
+<a href="/profile" class="btn btn-primary">My profile</a>
+<a href="/auth/logout" class="btn btn-primary">Logout</a>
+<a href="/rooms/create" class="btn btn-primary">Create new Room</a>
+{{/if}}

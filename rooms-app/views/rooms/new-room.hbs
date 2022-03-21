@@ -1,0 +1,22 @@
+<h1>CREATE A NEW ROOM</h1>
+
+<form action="/rooms/create" method="POST" enctype="multipart/form-data">
+
+    <label for="name">Name:</label>
+    <br>
+    <input type="text" name="name">
+    <br>
+
+    <label for="description">Description:</label>
+    <br>
+    <textarea name="description" cols="30" rows="10"></textarea>
+    <br>
+
+    <label for="imgUrl">Image:</label>
+    <br>
+    <input type="file" name="imgUrl">
+    <br>
+
+    <br>
+    <button type="submit">Create</button>
+</form>

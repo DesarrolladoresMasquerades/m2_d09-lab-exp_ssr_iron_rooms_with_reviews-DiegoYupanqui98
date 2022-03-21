@@ -1,0 +1,11 @@
+<h1>ROOM : {{room.name}}</h1>
+<img src="{{room.imgUrl}}" alt="room image">
+<p>{{room.description}}</p>
+
+<h3>Owner: {{room.owner.fullName}}</h3>
+
+<a href="/" class="btn btn-primary">Home</a>
+
+{{#if isOwner}}
+<a href="/rooms/{{_id}}/edit" class="btn btn-primary">Edit</a>
+{{/if}}
